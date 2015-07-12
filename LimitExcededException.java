@@ -1,0 +1,2 @@
+class LimitExcededException extends Exception{
+}
