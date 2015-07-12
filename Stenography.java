@@ -141,7 +141,7 @@ final public class Stenography extends JFrame{
     centro.add(lineaBaja,c);
 
     JPanel centroDesencriptado=new JPanel(new BorderLayout());
-    panelPrincipal.addTab("Unencrypt",centroDesencriptado);
+    panelPrincipal.addTab("Decrypt",centroDesencriptado);
 
     JPanel lineaBajaDesencriptado=new JPanel(new GridBagLayout());
     c.fill=c.NONE;
@@ -153,9 +153,9 @@ final public class Stenography extends JFrame{
     c.gridx = 2;
     c.gridy = 2;
     lineaBajaDesencriptado.add(Box.createRigidArea(new Dimension(30,30) ),c);
-    c.gridx = 4;
+    c.gridx = 1;
     c.gridy = 0;
-    lineaBajaDesencriptado.add(Box.createRigidArea(new Dimension(30,30) ),c);
+    lineaBajaDesencriptado.add(new JLabel("Write the key to decrypt and then load the image"),c);
 
     cargarEncriptado=new JButton("Load png");
     c.fill=c.NONE;
@@ -164,7 +164,7 @@ final public class Stenography extends JFrame{
     c.gridx = 1;
     c.gridy = 1;
     lineaBajaDesencriptado.add(cargarEncriptado,c);
-    
+	
 
     JPanel pp= new JPanel(new GridLayout(1,2));
     claveDesencripta=new JTextArea("");
